@@ -3,7 +3,7 @@ main {
     .main-bio{
         max-width: 1000px;
         align-items: center;
-        display: flex;
+        // display: flex;
         .bio-intro{
             h5 {
                 display: inline-block;
@@ -31,9 +31,8 @@ main {
             }
         }        
         .content-btn{
-            width: 260px;
-            @extend %dir-col-center;
-            align-items: center;
+            width: 100%x;
+            display: flex;
             gap:1rem;
             padding: 0em;
             .btn-primary{
