@@ -24,7 +24,6 @@
     margin-bottom: 6rem;
     align-items: center;
     .content-container-left{
-      height: 100%;
       grid-row: 1/-1;
       grid-column: 1/2;
       display: flex;
@@ -56,14 +55,13 @@
 
   .content-container-right{
     grid-column: 2/-1;
-    height: 100%;
     grid-row: 1/-1;
       .content-container {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         -webkit-box-align: center;
         -ms-flex-align: center;
-        align-items: center;
+        // align-items: center;
         .right {
           position: relative;
           grid-column: 1 / 8;
@@ -195,10 +193,8 @@
 
 .content-container-main:nth-child(even) .content-container-left{
   grid-column: 12/-1;
-  height: 100%;
 }
 .content-container-main:nth-child(even) .content-container-right{
-  height: 100%;
   grid-column: 1/12; 
   .right{
     grid-column: 6 / -1;
