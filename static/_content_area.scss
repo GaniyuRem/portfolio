@@ -1,0 +1,52 @@
+main {
+    padding-top: 12em;
+    .main-bio{
+        max-width: 1000px;
+        align-items: center;
+        display: flex;
+        .bio-intro{
+            h5 {
+                display: inline-block;
+                font-weight: 100;
+                 &::before {
+                    content: '';
+                    width: 18px;
+                    height: 1.5px;
+                    display: inline-flex;
+                    background-color: white;
+                    text-align: center;
+                }
+            }
+            h1 {
+                font-size: 2.8rem;
+                font-weight: 10;
+                text-justify: justify;
+                text-justify: inter-word;
+                color: $body-font-clr;
+                line-height: 1;
+                font-weight: 30;
+                max-width: 520px;
+                margin: 20 0px;
+                color: #dadada;
+            }
+        }        
+        .content-btn{
+            width: 260px;
+            @extend %dir-col-center;
+            align-items: center;
+            gap:1rem;
+            padding: 0em;
+            .btn-primary{
+                @extend %btn-primary !optional;
+                text-align: center;
+                margin: 0;
+            }
+            .btn-secondary {
+                @extend %btn-secondary !optional;
+                text-align: center;
+                margin: 0;
+                width: 100px;
+            }
+        }
+    }
+}

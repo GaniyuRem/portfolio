@@ -1,0 +1,140 @@
+.contact-container{
+    margin: 14rem 0 4rem;
+    .contacts-inner {
+        display: flex;
+        justify-content: space-between;
+        .about_me {
+            flex: 1;
+            .find {
+                display: flex;
+                width: 130px;
+                justify-content: space-between;
+                margin-bottom: 5rem;
+
+                h1 {
+                font-size: 45px;
+                line-height: 1;
+                color: #b6b6b6;
+                }
+                .fa-search {
+                color: rgba(255, 255, 255, 0.194);
+                transform: rotate(90deg) scaleX(1);
+                transition: all 0.9s;
+                @extend %work-hover;
+                }
+            }
+            .about-container {
+                margin-bottom: 5rem;
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                gap:4rem;
+                .about {
+                    position: relative;
+                    height: 50px;
+                    transition: 0.8s;
+                    border: 1px solid rgba(255, 255, 255, 0.194);
+                    padding: 1rem;
+                    display: flex;
+                    align-items: center;
+                    background-color: rgb(21, 21, 21);
+                    justify-content: space-between;
+                    .fa-github {
+                        color: rgb(225, 223, 223);
+                        @extend %work-hover;
+                    }
+                    div {
+                        display: flex;
+                        height: inherit;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        h6 a{
+                            color: grey;
+                        }
+                    }
+                }
+                .about:before {
+                    content: '';
+                    position: absolute;
+                    border: 2px solid rgba(80, 80, 80, 0.317);
+                    width: 100%;
+                    height: 100%;
+                    border-color: transparent transparent rgba(80, 80, 80, 0.317)
+                        rgba(80, 80, 80, 0.317);
+                    bottom: -4;
+                    left: -4;
+                    z-index: -1;
+                    transition: all 0.9s;
+                }
+            }
+            .about-container div:nth-child(odd):hover {
+                border-color: rgba(240, 188, 98, 0.899);
+            }
+            .about-container div:nth-child(odd):hover::before {
+                background-color: rgba(223, 161, 53, 0.899);
+                z-index: -1;
+            }
+            .about-container div:nth-child(even):hover{
+                border-color: rgba(235, 39, 39, 0.303);
+            }
+            .about-container div:nth-child(even):hover::before{
+                background-color: rgba(235, 39, 39, 0.783);
+                z-index: -1;
+
+            }
+        }
+        .contact-form{
+            flex:1;
+            .contact {
+                float: right;
+                text-align: left;
+                font-size: 11px;
+                font-weight: bold;
+                padding: 1rem 1.5rem;
+                border-radius: 8px;
+                width: 310px;
+                border: 2px solid rgba(80, 80, 80, 0.317);
+                background-color: rgba(38, 37, 37, 0.317);
+                box-shadow: 0 15px 35px rgba(37, 37, 38, 0.01), 0 5px 15px rgba(9, 9, 9, 0.91) !important;
+                form {
+                    width: inherit;
+                    input[type='text'] {
+                        @extend %input;
+                    }
+                    textarea {
+                        @extend %textarea;
+                    }
+                    input:focus,
+                    textarea:focus {
+                        @extend %textareamessage;
+                        border: 1px solid rgb(103, 102, 102);
+                        box-shadow: 0 0 3px rgb(97, 97, 97);
+                    }
+                }
+                .contact-msg-sucess{
+                    background-color: rgb(47, 123, 47);
+                    box-sizing: border-box;
+                    width: 100%;
+                    display: none;
+                    position: relative;
+
+                    padding: 0.8rem 0.3rem;
+                    h5 {
+                        text-align: center;
+                    }
+                    .fa-times{
+                        position: absolute;
+                        top: 40%;
+                        right: 20;
+                        margin: auto;
+                        box-sizing: border-box;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+
+

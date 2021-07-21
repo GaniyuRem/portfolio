@@ -1,0 +1,83 @@
+@import 'utility';
+@import 'default';
+@import 'config';
+@import 'nav-bar';
+@import 'btn';
+@import 'fa-config';
+@import 'content_area';
+@import 'skills';
+@import 'contact';
+@import 'footer';
+@import 'work';
+
+body {
+    font-family: "Poppins", sans-serif;
+    color:$body-font-clr;
+    background-color: rgb(21, 21, 21);
+    overflow: hidden;
+   
+}
+.root-body{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    height: 710px;
+    .out-body-left {
+        width: 250px;
+        position: relative;
+        padding: 2rem 1rem;
+        min-height: 100vh;
+        box-sizing: border-box;
+        background-color: #0e0d0d;
+        &::after {
+            display: block;
+            position: absolute;
+            right: -16;
+            top: 0;
+            height: 100%;
+            background-color: rgba(12, 11, 11, 0.577);
+            width: 11.5px;
+            border-right: 2.5px solid rgba(46, 46, 46, 0.927);
+            content: '';
+        }
+        .out-side-info-inner-con {
+            @extend %dir-col-center;
+            justify-content: space-between;
+            height: 100%;
+            box-sizing: border-box;
+            .out-side-name {
+            @extend %dir-col-center;
+                h3 {
+                    display: block;
+                    font-size: 20px;
+                }
+            }
+            .out-side-nav {
+                ul {
+                    li {
+                    list-style: none;
+                    }
+                }
+            }
+            .out-side-location {
+                @extend %dir-col-center;
+            }
+            .out-side-logo {
+                @extend %dir-col-center;
+                i {
+                    display: block;
+                    color: #a8b3a8;
+                    margin: 1rem 0;
+                }
+                img {
+                        object-fit: contain;
+                    width: 12%;
+                }
+            }
+        }
+    }
+}
+
+a{
+    text-decoration: none;
+}
+@import 'mobile';

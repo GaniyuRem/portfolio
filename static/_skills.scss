@@ -1,0 +1,59 @@
+*{color: white;}
+.skills{
+  display: flex;
+  padding: 120px 0 0 0;
+  gap: 1rem;
+  align-items: center;
+  .skills-l{
+    flex: 1;
+    width: 100%;
+    P{
+      text-align: justify;
+      text-justify: distribute;
+      color: rgb(196, 194, 194);
+      padding: 2rem 0 0 0;
+    }
+    h2{
+      color: #dadada;
+    }
+    .main-skills{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+    h4{
+      color: #dadada;
+      padding: 1rem 0 0 0;
+    }
+    .main-skills li {
+      list-style-type: none;
+      display: flex;
+      max-width: 130px;
+      color: rgba(72, 66, 54, 0.81);
+      padding: 0.5rem;
+      font-size: 11px;
+      text-align: center;
+      align-items: center;
+      border-radius: 2px;
+        &::before {
+          background: url('portfolio_app/img/bracket.png') left center no-repeat;
+          vertical-align: middle;
+          background-size: 15px auto;
+          width: 30px;
+          display: inline-block;
+          height: 30px;
+          content: '';
+          filter: saturate(500%) contrast(200%) brightness(500%) invert(80%)
+            sepia(80%) hue-rotate(120deg);
+        }&:hover{
+          color: rgb(181, 181, 181);
+        }
+      }
+    }
+    .skills-r {
+    flex: 1;
+    img{
+      object-fit: contain;
+      width: 100%;
+    }
+  }
+}

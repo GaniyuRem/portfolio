@@ -1,0 +1,159 @@
+.outer-wrap-main{
+    padding: 2rem;
+    grid-column: 2/-1;
+    overflow-x: hidden;
+}
+// _WORK.SCSS
+%work-hover:hover {
+  color: rgb(240, 210, 155);
+  opacity: 100;
+}
+// _SKILLS.SCSS
+%hover-work-Tools-left:hover {
+  position: relative;
+  left: -8;
+  top: 0;
+  transition: left 0.8s ease 0s;
+}
+%Tools-work-postion-left {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+%Tools-work-postion-right:hover {
+  position: relative;
+  right: 8;
+  top: 0;
+  transition: left 0.8s ease 0s;
+}
+
+%hover-work-Tools-right:hover {
+  position: relative;
+  right: 8;
+  top: 0;
+  transition: left 0.8s ease 0s;
+}
+
+
+// _BTN AND SKILLS DEFAULT _TRANSFORM
+%hover-scale:hover {
+  transform: scale(0.992);
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.form-control ::placeholder{
+  color: white;
+}
+// INPUT BOX FROM CONTACT SECTION
+@mixin input{
+    width: 100%;
+    border: 0;
+    border-radius: 5px;
+    margin: auto 0px;
+    background-color: rgba(38, 37, 37, 0.255);
+    margin-bottom: 20px;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.146);
+}
+%input {
+  @include input;
+}
+
+.input{
+  @extend %input;
+}
+// TEXT AREA  BOX FROM CONTACT SECTION
+
+@mixin textarea {
+  width: 100%;
+  border: 0;
+  border-radius: 5px;
+  margin: auto 0px;
+  background-color: rgba(38, 37, 37, 0.255);
+  padding: 0.5rem;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.146);
+}
+%textarea {
+  @include textarea;
+}
+.textarea {
+  @extend %textarea;
+}
+// FOCUS ON TEXT AREA
+@mixin textareamessage {
+  outline-offset: 0px;
+  outline: none;
+}
+%textareamessage {
+  @include textareamessage;
+}
+
+.textarea {
+  @extend %textareamessage;
+}
+
+
+// NAV LIST DEFAULT CLASS
+@mixin leftrightnav {
+  position: fixed;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.1s cubic-bezier(0.34, 0.01, 0.83, 0.67);
+  padding: 3rem;
+  top: 0;
+  box-sizing: border-box;
+}
+%leftrightnav{
+  @include leftrightnav;
+}
+.leftrightnav{
+  @extend %leftrightnav;
+}
+
+// SYTLING FOR PROGRAMMING TOOLS SECTION MOBILE
+@mixin lg-s {
+  border-radius: 0.4rem;
+  padding: 1rem;
+  border: 2px solid rgba(80, 80, 80, 0.317);
+  box-sizing: border-box;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+  rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  gap:1rem;
+}
+
+%lg-s{
+  @include lg-s
+}
+
+@mixin dir-col-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+
+%dir-col-center{
+  @include dir-col-center
+}
+

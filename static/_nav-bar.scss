@@ -1,0 +1,155 @@
+:root{
+  box-sizing: border;
+}
+%nav-bar {
+  box-sizing: border-box;
+  &:hover {
+    transform: scale(1.05);
+    transition: 0.6s;
+  }
+}
+
+.site-header {
+  position: relative;
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    .l-nav-li {
+      font-weight: 900;
+      list-style-type: none;
+      li {
+        @extend %nav-bar;       
+        color: #dadada;
+        font-size: 20px;
+        visibility: collapse;
+      }
+    }
+  } 
+}
+
+
+.r-nav-li-txt li {
+  display: inline-block;
+  margin: 0 5px;
+}
+.left-l li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.side-lft-nd-main-nav li {
+  position: relative;
+
+}
+.side-lft-nd-main-nav {
+  list-style: cjk-earthly-branch;
+  li:before {
+    @extend %nav-bar;
+    content: '';
+    height: 2px;
+    width: 0%;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition: width 0.5s;
+  }
+}
+.side-lft-nd-main-nav {
+  li:after {
+    @extend %nav-bar;
+    content: '';
+    height: 3px;
+    width: 3px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition: width 0.5s;
+  }
+}
+
+.side-lft-nd-main-nav {
+  li:hover:after {
+    height: 0%;
+  }
+}
+.side-lft-nd-main-nav {
+  li:hover:before {
+    width: 100%;
+    background-color: #eef2f1;
+    background: linear-gradient(0.4turn, #f2f9f7, #555555);
+  }
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+/* Rotate first bar */
+.change{
+  background-color: rgba(24, 24, 24, 0.386);
+  padding: 0.5rem;
+}
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+  background-color: white;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+  background-color: white;
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+.container {
+  display: inline-block;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#check {
+  position: absolute;
+  right: 0;
+  display: none;
+}
+
+.checkbtn {
+  display: none;
+}
+.right-r {
+  opacity: 0;
+  display: none;
+}
+.name-side-l {
+  display: none;
+}
+.nav-contact {
+  display: none;
+}
+
+.nav-overlay{
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  backdrop-filter: blur(3px);
+  background: rgba(0,0,0,0.5);
+}
