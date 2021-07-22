@@ -18,7 +18,7 @@ def index(request):
                 subject=subject, message=message).save()
         message = f'{full_name} has sent you a Message !\n\n\n\n\n{message}\n\n\nFrom: {email}\n\n\n\n'
         send_mail(subject, message, '', ['gospelearth@gmail.com'])
-        return JsonResponse({"result": "success", "message": "We have <Strong> successfully </Strong> received your message. We'll get back to you soon."})
+        return JsonResponse({"result": "success", "message": "Thank you for your message"})
     return render(request, template, context)
 
 
