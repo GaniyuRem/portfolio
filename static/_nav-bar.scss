@@ -41,7 +41,6 @@
 
 .side-lft-nd-main-nav li {
   position: relative;
-
 }
 .side-lft-nd-main-nav {
   list-style: cjk-earthly-branch;
@@ -83,7 +82,9 @@
     background: linear-gradient(0.4turn, #f2f9f7, #555555);
   }
 }
-
+.side-lft-nd-main-nav li:nth-child(2) {
+  padding: 1rem 0;
+}
 .bar1,
 .bar2,
 .bar3 {
