@@ -165,8 +165,8 @@
                         </div>
                         <div class="vid-container">
                             <div class="vid-inner">
-                                <video class src="{% static 'portfolio_app/video/bullying.mp4' %}" autoplay="autoplay"
-                                    loop muted type='video/mp4' controls preload="auto"></video>
+                                <video playsinline autoplay loop muted
+                                    src="{% static 'portfolio_app/video/bullying.mp4' %}"></video>
                             </div>
                         </div>
                     </div>
@@ -209,7 +209,7 @@
                         </div>
                         <div class="vid-container">
                             <div class="vid-inner">
-                                <video controls preload="auto" autoplay loop muted='muted'
+                                <video playsinline autoplay loop muted
                                     src="{% static 'portfolio_app/video/threejs.mp4' %}" type='video/mp4'></video>
                             </div>
                         </div>
@@ -253,8 +253,9 @@
                         </div>
                         <div class="vid-container">
                             <div class="vid-inner">
-                                <video class src="{% static 'portfolio_app/video/space.mp4' %}" autoplay="autoplay" loop
-                                    muted type='video/mp4' controls preload="auto"></video>
+                                <video playsinline autoplay loop muted
+                                    src="{% static 'portfolio_app/video/space.mp4' %}">
+                                </video>
                             </div>
                         </div>
                     </div>
