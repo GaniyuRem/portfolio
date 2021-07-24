@@ -98,6 +98,25 @@
       }
     }
   }
+  .content-container-main {
+        .content-container-right {
+            .content-container {
+                .right {
+                    .content {
+                        .p-details {
+                            .preview-vid {
+                                .preview-btn {
+                                    .watch {
+                                        display: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 
