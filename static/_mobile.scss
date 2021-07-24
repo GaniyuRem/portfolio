@@ -105,7 +105,7 @@
                     .content {
                         .p-details {
                             .preview-vid {
-                                .preview-btn {
+                                .prseview-btn {
                                     .watch {
                                         display: none;
                                     }
@@ -117,6 +117,7 @@
             }
         }
     }
+
 }
 
 
@@ -192,15 +193,34 @@
         display: block;
     }
 
-    .content-container-main
-        .content-container-right
-        .content-container
-        .right
-        .content
-        .p-details
-        .preview-vid {
-        padding: 15px 0;
+    .content-container-main{
+        .content-container{
+            .right {
+                .content {
+                    .p-details {
+                        padding-top: 2em;
+                        .preview-vid {
+                            padding: 15px 0;
+                            display: none;
+                        }
+                        .content-icons{
+                            padding-top: 2em;
+                        }
+                    }
+                }
+            }   
+        }
     }
+      
+    //     .content-container-right
+    //     .content-container
+    //     .right
+    //     .content
+    //     .p-details
+    //     .preview-vid {
+    //         padding: 15px 0;
+    //         display: none;
+    // }
 
     .content-container-main .content-container-right .content-container .right {
         min-height: unset;
