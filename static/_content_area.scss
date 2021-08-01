@@ -45,16 +45,16 @@ main {
                 text-align: center;
                 margin: 0;
                 width: 100px;
-                &::before{
-                    background: url('portfolio_app/img/download.gif') left center no-repeat;
-                    vertical-align: middle;
-                    background-size: 24px auto;
-                    width: 30px;
-                    display: inline-block;
-                    height: 30px;
-                    z-index: 1;
-                    content: '';
-                }
+                // &::before{
+                //     background: url('portfolio_app/img/download.gif') left center no-repeat;
+                //     vertical-align: middle;
+                //     background-size: 24px auto;
+                //     width: 30px;
+                //     display: inline-block;
+                //     height: 30px;
+                //     z-index: 1;
+                //     content: '';
+                // }
             }
         }
     }
